@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Time</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+
+</head>
+<body>
+        <div class="container">
+
+                <!-- Jumbotron -->
+                <div class="jumbotron">
+                  <h1 class="text-center">TRAINS!  Choo Choo!</h1>
+                  <h3 class="text-center">What you need to know</h3>
+                </div>
+          
+                <div class="row">
+          
+                  <div class="col-lg-12">
+          
+                  <!-- Schedule Table-->
+                    <div class="panel panel-primary">
+                      <div class="panel-heading" id="panel-heading">
+                        <h3 class="panel-title"><strong>Current Train Schedule</strong></h3>
+                      </div>
+                      <div class="panel-body">
+                        <table class="table table-hover" id='schedule-table'>
+                          <thead>
+                            <tr>
+                              <th>Train Name</th>
+                              <th>Destination</th>
+                              <th>Frequency</th>
+                              <th>Next Arrival</th>
+                              <th>Minutes Away</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <!-- Add Trains  -->
+          <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><strong>Add Train</strong></h3>
+                </div>
+                <div class="panel-body">
+    
+                  <!-- Entry Form -->
+                  <form>
+                    <div class="form-group">
+                      <label for="employee-name-input">Train Name</label>
+                      <input class="form-control" id="train-name-input" type="text">
+                    </div>
+                    <div class="form-group">
+                      <label for="role-input">Destination</label>
+                      <input class="form-control" id="destination-input" type="text">
+                    </div>
+                    <div class="form-group">
+                      <label for="start-input">First Train Time (HH:mm-military time)</label>
+                      <input class="form-control" id="time-input" type="text">
+                    </div>
+                    <div class="form-group">
+                      <label for="rate-input">Frequency (min)</label>
+                      <input class="form-control" id="frequency-input" type="text">
+                    </div>
+                    <button class="btn btn-primary" id="submit-btn" type="submit">Submit</button>
+                  </form>
+    
+                </div>
+    
+              </div>
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script></body>
+    <script src=js.js></script>
+</html>

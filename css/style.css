@@ -1,0 +1,10 @@
+
+.jumbotron {
+    background-color: aqua; 
+}
+
+#panel-heading {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 10; 
+}   
