@@ -66,9 +66,10 @@
 
 
       // calculating the next train
-      // var nextTrain = moment().diff(moment.unix(varTrain, "X"), "minutes");
-      // console.log(nextTrain, "moment");
+      var nextTrain = moment().diff(moment.unix(varTrain, "X"), "minutes");
+      console.log(nextTrain, "moment");
 
+      // nothing is console logging not even the variable below
       console.log(varTime); 
     
     
