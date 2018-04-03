@@ -52,25 +52,22 @@
       var varDestination = childSnapshot.val().destination;
       var varTime = childSnapshot.val().time;
       var varFrequency = childSnapshot.val().frequency;
-      
-      // Train Info
-      // console.log(varTrain);
-      // console.log(varDestination);
-      // console.log(varTime);
-      // console.log(varFrequency);
-    
 
-
+      var timeArr = varTime.split(":");
+      var trainTime = moment().hours(timeArr[0]).minutes(timeArr[1]);
 
       // time variables
 
 
       // calculating the next train
-      var nextTrain = moment().diff(moment.unix(varTrain, "X"), "minutes");
+      var nextTrain = moment().diff(trainTime,"minutes");
       console.log(nextTrain, "moment");
 
+      // need to modulo diff between frequency and nextTrain
+      console.log(nextTrain % varFrequency, "wtf is this"); 
+
       // nothing is console logging not even the variable below
-      console.log(varTime); 
+      // console.log(varTime); 
     
     
       // Add each train's data into the table
